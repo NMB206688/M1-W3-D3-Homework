@@ -93,6 +93,26 @@
   });
 
 
+  // Function to calculate the percentage of one number relative to another
+  function percentOf(num1, num2) {
+    // Calculate the percentage
+    var percent = (num1 / num2) * 100;
+    // Display the result in the solution div
+    document.getElementById("solution").innerHTML = num1 + ' is ' + percent + '% of ' + num2;
+  }
+
+  // Event listener for the percentage button
+  var percentButton = document.getElementById("percent-button");
+  percentButton.addEventListener("click", function() {
+    // Get the values from the input fields
+    var num1 = document.getElementById("percent1-input").value;
+    var num2 = document.getElementById("percent2-input").value;
+    // Call the function to calculate the percentage
+    percentOf(num1, num2);
+  });
+
+
+
 
 </script>
 </body>
