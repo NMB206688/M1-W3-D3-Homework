@@ -111,6 +111,41 @@
     percentOf(num1, num2);
   });
 
+  // Function to find the nearest whole number
+  function nearestWholeNumber(num) {
+    // Round the number to the nearest whole number
+    var nearestWhole = Math.round(num);
+    // Display the result in the solution div
+    document.getElementById("solution").innerHTML = 'The nearest whole number of ' + num + ' is ' + nearestWhole;
+  }
+
+  // Event listener for the integer button
+  var intButton = document.getElementById("int-button");
+  intButton.addEventListener("click", function() {
+    // Get the value from the input field
+    var num = document.getElementById("int-input").value;
+    // Call the function to find the nearest whole number
+    nearestWholeNumber(num);
+  });
+
+
+   // Function to calculate the area of a circle given its radius
+   function calculateArea(radius) {
+    // Calculate the area using the formula πr²
+    var area = Math.PI * radius * radius;
+    // Display the result in the solution div
+    document.getElementById("solution").innerHTML = 'The area of a circle with radius ' + radius + ' is ' + area;
+  }
+
+  // Event listener for the area button
+  var areaButton = document.getElementById("area-button");
+  areaButton.addEventListener("click", function() {
+    // Get the value from the input field
+    var radius = document.getElementById("area-input").value;
+    // Call the function to calculate the area
+    calculateArea(radius);
+  });
+
 
 
 
