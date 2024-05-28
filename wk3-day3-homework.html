@@ -75,6 +75,25 @@
   /* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
 
 
+  // Function to half a number
+  function halfNumber(num) {
+    // Calculate half of the number
+    var halfnum = num / 2;
+    // Display the result in the solution div
+    document.getElementById("solution").innerHTML = 'Half of ' + num + ' is ' + halfnum;
+  }
+
+  // Event listener for the half button
+  var halfButton = document.getElementById("half-button");
+  halfButton.addEventListener("click", function() {
+    // Get the value from the input field
+    var num = document.getElementById("half-input").value;
+    // Call the function to half the number
+    halfNumber(num);
+  });
+
+
+
 </script>
 </body>
 </html>
